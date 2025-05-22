@@ -1,0 +1,398 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+h1{
+    color: black;
+    text-align: center;
+}
+
+header {
+    grid-area: header;
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 20px;
+    background-image: url("../imagenes/SGE.jpg");
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    background-position: center;
+    display : flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inicio{
+  background-color: transparent;
+}
+
+h1{
+    color: black !important;
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+header img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display : flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav {
+    grid-area: nav;
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    width: 100%;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    transition: all 0.5s;
+}
+
+nav ul li {
+    width: 23%;
+    text-align: center;
+}
+
+nav ul a {
+    color: white;
+    text-decoration: none;
+    border: 1px solid white;
+    width: 100%;
+    border-radius: 30px;
+    display: inline-block;
+    padding: 2px;
+}
+
+.botonmenu button {
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+}
+
+.botonmenu p {
+    display: inline-block;
+}
+
+.botonmenu {
+    text-align: center;
+    display: block;
+}
+
+.menú:not(.show) {
+    display: none;
+}
+
+.boton-1-pagina {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.boton-1-pagina:hover {
+    background-color: black;
+    text-decoration: none;
+}
+
+.boton-3-pagina {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.boton-3-pagina:hover {
+    background-color: black;
+    text-decoration: none;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-image: url(../imagenes/Odoo.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+}
+
+.titulo{
+    text-align: center;
+}
+
+.titulo h2{
+    font-size: 40px;
+}
+
+.carrusel {
+    position: relative;
+    width: 50%;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 0 10px white;
+    background: white;
+    overflow: hidden;
+}
+
+.carrusel img{
+    height: 400px;
+}
+
+.carrusel h2{
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.slide {
+    display: none;
+    text-align: center;
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+}
+
+.caption {
+    padding: 10px;
+    background-color: white;
+    font-size: 16px;
+}
+
+.activo {
+    display: block;
+}
+
+button.prev, button.next {
+    position: absolute;
+    top: 45%;
+    background-color: black;
+    border: none;
+    color: white;
+    font-size: 24px;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    transform: translateY(-50%);
+}
+
+button.prev { left: 10px; }
+button.next { right: 10px; }
+
+button:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+.explicacion{
+    background-color: transparent;
+    width: 100%;
+    padding: 20px;
+    box-shadow: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-flow: row;
+}
+
+.informacion{
+    text-align: center;
+}
+
+.explicacion div{
+    width: 100%;
+    padding: 20px;
+    box-shadow: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-flow: row;
+}
+
+.explicacion img{
+    max-width: 50%;
+    max-height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.punto1{
+    background-color: lightgreen;
+}
+
+.punto1 > div:last-child{
+    flex-flow: column;
+}
+
+.punto1 img{
+    max-width: 60%;
+    max-height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.punto2{
+    background-color: lightblue;
+}
+
+.punto2 > div:first-child{
+    flex-flow: column;
+}
+
+.punto2 img{
+    max-width: 60%;
+    max-height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.punto3{
+    background-color: lightyellow;
+}
+
+.punto3 > div:last-child{
+    flex-flow: column;
+}
+
+.punto3 img{
+    max-width: 60%;
+    max-height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.punto4{
+    background-color: lightpink;
+}
+
+.punto4 > div:first-child{
+    flex-flow: column;
+}
+
+.punto4 img{
+    max-width: 60%;
+    max-height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section {
+    background-color: white;
+    padding: 30px;
+    margin-bottom: 50px;
+    box-shadow: 0 0 10px 5px black;
+    border-radius: 50px;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.6s ease;
+    width: 90%;
+}
+
+.visible{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+h1, h2 {
+    color: black;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: plum;
+    color: white;
+    text-align: center;
+    width: 100%;
+    padding: 20px
+}
+
+.redes-sociales {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 15px;
+}
+
+.redes-sociales a {
+    color: white;
+    font-size: 28px;
+    transition: transform 0.3s, color 0.3s;
+}
+
+.redes-sociales a:hover{
+    transform: scale(1.2);
+    color: lightsalmon;
+}
+
+.boton-1-pagina {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.boton-1-pagina > a{
+    text-decoration: none;
+    color: white;
+}
+
+.boton-1-pagina:hover {
+    background-color: black;
+    text-decoration: none;
+}
+.boton-3-pagina {
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.boton-3-pagina > a{
+    text-decoration: none;
+    color: white;
+}
+
+.boton-3-pagina:hover {
+  background-color: black;
+  text-decoration: none;
+  color: white;
+}

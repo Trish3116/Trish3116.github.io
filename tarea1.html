@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SGE</title>
+    <link rel="stylesheet" href="./css/tarea1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<body>
+    <header>
+        <section id="inicio">
+            <h1>Sistema de Gestion de Empresas</h1>
+        </section>
+    </header>
+    <nav>
+        <div class="botonmenu">
+            <p>MENÚ</p>
+            <button onclick="mostrarMenu ()"></button>
+        </div>
+        <ul class="menú">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#fotos">Fotos</a></li>
+            <li><a href="#contacto">Pagina</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="fotos"></section>
+        <div class="imagen1"></div>
+        <div class="imagen2"></div>
+        <div class="imagen3"></div>
+        <div class="imagen4">
+            <h2>SGE</h2>
+            <p>Es un software que integra y automatiza los procesos de una empresa, permitiendo el control, la
+                planificación, la organización y la automatización de diversas funciones.</p>
+        </div>
+        <div class="imagen5"> </div>
+    </main>
+    <footer>
+        <div class="redes-sociales">
+            <a href="https://youtube.com/mitienda" target="_blank"><i class="fab fa-youtube"></i></a>
+            <a href="https://facebook.com/mitienda" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://twitch.tv/mitienda" target="_blank"><i class="fab fa-twitch"></i></a>
+            <a href="https://instagram.com/mitienda" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+        <button class="boton-2-pagina">
+            <a href="./tarea2.html">Página 2</a>
+        </button>
+        <button class="boton-3-pagina">
+            <a href="./tarea3.html">Página 3</a>
+        </button>
+    </footer>
+</body>
+
+<script>
+    function mostrarMenu() {
+        let menu = document.querySelector(".menú");
+        menu.classList.toggle("show");
+    }
+</script>
+
+</html>

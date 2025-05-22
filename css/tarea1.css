@@ -1,0 +1,238 @@
+body {
+  display: grid;
+  grid-template-areas:"header"
+                      "nav"
+                      "main"
+                      "aside"
+                      "footer";
+  grid-template-rows: auto auto auto auto;
+  grid-template-columns: 1fr;
+  height: 100vh;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+header {
+    grid-area: header;
+    text-align: center;
+    padding: 20px;
+    background-image: url("../imagenes/SGE.jpg");
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    background-position: center;
+    display : flex;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    color: white;
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+header img {
+    width: 100px;
+    height: 100px;
+    border-radius: 60%;
+    display : flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav {
+    grid-area: nav;
+    text-align: center;
+    background-color: lightskyblue;
+    color: black;
+    padding: 10px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+nav ul li {
+    width: 30%;
+    text-align: center;
+}
+
+nav ul a {
+    color: black;
+    text-decoration: none;
+    border: 1px solid black;
+    width: 100%;
+    border-radius: 30px;
+    display: inline-block;
+    padding: 2px;
+   
+}
+
+.botonmenu button {
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+}
+
+.botonmenu p {
+    display: inline-block;
+}
+
+.botonmenu {
+    text-align: center;
+    display: block;
+}
+
+.menú:not(.show) {
+    display: none;
+}
+
+main{
+    grid-area: main;
+    margin: 15px;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 1fr 1fr 1fr ;
+    grid-template-areas: "imagen1 imagen2 imagen3"
+                          "imagen1 imagen4 imagen3"
+                          "imagen1 imagen5 imagen3";
+    gap: 10px;
+}
+.imagen1{
+    background-image: url(../imagenes/dsg.jpg);
+    background-size: 100% 100%;
+    background-position: center;
+    grid-area: imagen1;
+    border-radius: 20px;
+    gap: 30px;
+}
+.imagen1:hover{
+    background-size: 120% 120%;
+    transition: 2s;
+    box-shadow: 10px 10px 10px darkgray;
+}
+.imagen2{
+    background-position: center;
+    background-image: url(../imagenes/que_es.webp);
+    background-size: 100% 100%;
+    grid-area: imagen2;
+    border-radius: 20px;
+    gap: 30px;
+}
+.imagen2:hover{
+    background-size: 120% 120%;
+    transition: 2s;
+    box-shadow: 10px 10px 10px darkgray;
+}
+.imagen3{
+    background-position: center;
+    background-image: url(../imagenes/sge.webp);
+    background-size: 100% 100%;
+    grid-area: imagen3;
+    border-radius: 20px;
+    gap: 30px;
+}
+.imagen3:hover{
+    background-size: 120% 120%;
+    transition: 2s;
+    box-shadow: 10px 10px 10px darkgray;
+}
+.imagen4{
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    background-size: 100% 100%;
+    grid-area: imagen4;
+    border-radius: 20px;
+    padding: 0px 50px;
+    gap: 30px;
+    text-align: center;
+}
+.imagen4:hover{
+    background-size: 120% 120%;
+    transition: 2s;
+    box-shadow: 10px 10px 10px darkgray;
+}
+.imagen5{
+    background-image: url(../imagenes/erp.webp);
+    background-size: 100% 100%;
+    background-position: center;
+    grid-area: imagen5;
+    border-radius: 20px;
+    gap: 30px;
+}
+.imagen5:hover{
+    background-size: 120% 120%;
+    transition: 2s;
+    box-shadow: 10px 10px 10px darkgray;
+}
+footer {
+  background-color: lightskyblue;
+  color: white;
+  text-align: center;
+  width: 100%;
+  padding: 20px
+}
+
+.redes-sociales {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 15px;
+}
+
+.redes-sociales a {
+  color: #fff;
+  font-size: 28px;
+  transition: transform 0.3s, color 0.3s;
+}
+
+.redes-sociales a:hover {
+  transform: scale(1.2);
+  color: lightsalmon;
+}
+
+.boton-2-pagina {
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.boton-2-pagina > a{
+    text-decoration: none;
+    color: white;
+}
+
+.boton-2-pagina:hover {
+  background-color: black;
+  text-decoration: none;
+}
+.boton-3-pagina {
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.boton-3-pagina > a{
+    text-decoration: none;
+    color: white;
+}
+
+.boton-3-pagina:hover {
+  background-color: black;
+  text-decoration: none;
+  color: white;
+}

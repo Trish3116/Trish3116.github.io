@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistemas de Gestión Empresarial</title>
+    <link rel="stylesheet" href="./css/tarea3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <section id="inicio">
+            <h1>Sistema de Gestion de Empresas</h1>
+        </section>
+    </header>
+
+    <main>
+        <section id="titulo">
+            <h2>Odoo</h2>
+            <hr>
+            <p>Odoo es un SGE (Sistema de Gestión Empresarial) o ERP (Enterprise Resource Planning) modular y de código
+                abierto, diseñado para ayudar a las empresas a gestionar de forma centralizada y eficiente todas sus
+                áreas clave: contabilidad, ventas, inventario, recursos humanos, fabricación, etc.</p>
+        </section>
+
+        <section class="carrusel">
+            <h2>Instalación y creación de la empresa</h2>
+            <div class="slide activo">
+                <img src="./imagenes/instalacion/imagen1.png">
+                <p class="caption">Paso 1: Descargar el SGE gratuito desde la página oficial.</p>
+            </div>
+            <div class="slide">
+                <img src="./imagenes/instalacion/imagen2.png">
+                <p class="caption">Paso 2: Una vez descargado, abrimos el ejecutable y continuamos sin tocar nada.</p>
+            </div>
+            <div class="slide">
+                <img src="./imagenes/instalacion/imagen3.png">
+                <p class="caption">Paso 3: Continuamos sin tocar nada, dandole a next.</p>
+            </div>
+            <div class="slide">
+                <img src="./imagenes/instalacion/imagen4.png">
+                <p class="caption">Paso 4: Creamos la empresa ficticia con los datos requeridos.</p>
+            </div>
+            <div class="slide">
+                <img src="./imagenes/instalacion/imagen5.png">
+                <p class="caption">Paso 5: Este es el panel principal del sistema Odoo.</p>
+            </div>
+
+            <button class="prev" onclick="cambiarSlide(-1)">❮</button>
+            <button class="next" onclick="cambiarSlide(1)">❯</button>
+        </section>
+
+        <section id="explicacion">
+            <div class="punto1">
+                <div>
+                    <img src="./imagenes/aplicaciones.png" alt="">
+                </div>
+                <div>
+                    <h2>Integración de Odoo en el sistema</h2>
+                    <p>Como podemos ver en la parte superior de la imágen, el sistema se ha integrado en localhost con
+                        MySQL, concretamente en el puerto 8069. Es muy cómodo tanto para eso como para crear la BD, ya
+                        que en la propia instalación la estamos generando automáticamente.</p>
+                </div>
+            </div>
+            <hr>
+            <div class="punto2">
+                <div>
+                    <h2>Parámetros del sistema</h2>
+                    <p>En los ajustes generales de Odoo, podemos gestionar todos los ajustes importantes, resaltando la
+                        información de la compañía o las compañías que estemos gestionando, ya que permite gestionar más
+                        dfe una a la vez</p>
+                </div>
+                <div>
+                    <img src="./imagenes/ajustes.png" alt="">
+                </div>
+            </div>
+            <hr>
+            <div class="punto3">
+                <div>
+                    <img src="./imagenes/aplicaciones.png" alt="">
+                </div>
+                <div>
+                    <h2>Panel de Aplicaciones</h2>
+                    <p>En este panel, podemos instalar absolutamente todas las aplicaciones que nos sean necesarias para
+                        la gestión de nuestra compañía, desde generador de informes hasta gestión de pagos pasando por
+                        control de horas.</p>
+                </div>
+            </div>
+            <hr>
+            <div class="punto4">
+                <div>
+                    <h2>Gestión de Usuarios</h2>
+                    <p>Desde este panel, podemos invitar a nuevos usuarios y gestionar los roles del sistema Odoo de
+                        nuestra o nuestras compañías. Por ello, es bastante importante que sea cómodo y fácil de usar
+                        dicho panel.</p>
+                </div>
+                <div>
+                    <img src="./imagenes/ajustes.png" alt="">
+                </div>
+            </div>
+        </section>
+        <section class="carrusel">
+            <h2>Seguirdad y acceso a la información</h2>
+            <div class="slide activo">
+                <img src="">
+                <p class="caption">Desde este panel podemos gestionar todos los usuarios que tenemos en el sistema,
+                    además de poder agregar nuevos o eliminarlos</p>
+            </div>
+            <div class="slide">
+                <img src="./imagenes/usuarios.png">
+                <p class="caption">Cuando seleccionamos un usuario en concreto, vemos toda su información y, a parte de
+                    poder modificarla, lo más importante es poder tocar sus permisos. Si le damos Ajustes, podrá acceder
+                    a los ajustes pero no al panel de aplicaciones, y así al revés</p>
+            </div>
+            <div class="slide">
+                <img src="./imagenes/permisos.png">
+                <p class="caption">Muy importante la siguiente foto, ya que podemos activar la seguridad en dos pasos
+                    para el usuario, y así poder gestionarlo de una manera más segura y sin fallas. Dicha contraseña la
+                    podrá gestionar el administrador sin problemas.</p>
+            </div>
+            <button class="prev" onclick="cambiarSlide(-1)">❮</button>
+            <button class="next" onclick="cambiarSlide(1)">❯</button>
+        </section>
+        <section id="explicacion">
+            <div class="punto1">
+                <div>
+                    <img src="./imagenes/actividades.png" alt="">
+                </div>
+                <div>
+                    <h2>Elaboración de Informes</h2>
+                    <p>El SGE (Sistema Gestión de Empresas), se encarga de elaborar informes recogiendo datos y
+                        estadísticas. Aquí he integrado unos datos de ejemplo para ver las estadísticas más claras.</p>
+                </div>
+            </div>
+            <hr>
+            <div class="punto2">
+                <div>
+                    <h2>Exportación de Informes</h2>
+                    <p>En cualquiera de los paneles podemos exportar los informes sin problema. Por ejemplo, aquí vemos
+                        como he exportado un excel de todos los usuarios del sistema, y más información relevante como
+                        la última conexión y el estado actual.</p>
+                </div>
+                <div>
+                    <img src="./imagenes/exportacion.png" alt="">
+                </div>
+            </div>
+        </section>
+    </main>
+    <script>
+        const elementos = document.querySelectorAll("section");
+
+        const mostrarElementos = () => {
+            elementos.forEach(elemento => {
+                const rect = elemento.getBoundingClientRect();
+                const alturaVentana = window.innerHeight;
+
+                if (rect.top < alturaVentana * 0.8) {
+                    elemento.classList.add("visible");
+                } else {
+                    elemento.classList.remove("visible");
+                }
+            });
+        };
+
+        let indice = 0;
+        const slides = document.querySelectorAll('.slide');
+
+        function mostrarSlide(nuevoIndice) {
+            slides[indice].classList.remove('activo');
+            indice = (nuevoIndice + slides.length) % slides.length;
+            slides[indice].classList.add('activo');
+        }
+
+        function cambiarSlide(direccion) {
+            mostrarSlide(indice + direccion);
+        }
+
+        window.addEventListener("scroll", mostrarElementos);
+        window.addEventListener("load", mostrarElementos);
+
+        function mostrarMenu() {
+            let menu = document.querySelector(".menú");
+            menu.classList.toggle("show");
+        }
+    </script>
+    <footer>
+        <div class="redes-sociales" id="contacto">
+            <a href="https://youtube.com/mitienda" target="_blank"><i class="fab fa-youtube"></i></a>
+            <a href="https://facebook.com/mitienda" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://twitch.tv/mitienda" target="_blank"><i class="fab fa-twitch"></i></a>
+            <a href="https://instagram.com/mitienda" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+        <button class="boton-1-pagina">
+            <a href="./tarea1.html">Página 1</a>
+        </button>
+        <button class="boton-3-pagina">
+            <a href="./tarea2.html">Página 2</a>
+        </button>
+    </footer>
+</body>
+
+</html>

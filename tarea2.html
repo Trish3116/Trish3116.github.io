@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistemas de Gestión Empresarial</title>
+    <link rel="stylesheet" href="./css/tarea2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <section id="inicio">
+            <h1>Sistema de Gestion de Empresas</h1>
+        </section>
+    </header>
+    <nav>
+        <div class="botonmenu">
+            <p>MENÚ</p>
+            <button onclick="mostrarMenu ()"></button>
+        </div>
+        <ul class="menú">
+            <li><a href="#introduccion">Introducción</a></li>
+            <li><a href="#tipos">Tipos</a></li>
+            <li><a href="#caracteristicas">Características</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="introduccion">
+            <h2>Introducción</h2>
+            <p>Un sistema de gestión empresarial permite administrar determinadas áreas de la empresa, como, por
+                ejemplo, la contabilidad y la facturación. Es más, en su versión más amplia, estaríamos hablando de un
+                ERP, que permite controlar todas las áreas del negocio.</p>
+        </section>
+        <section id="tipos">
+            <h2>Tipos de Sistemas de Gestión Empresarial</h2>
+            <ul>
+                <li><strong>Enterprise Resource Planning (ERP)</strong>: Los ERP son los sistemas de gestión empresarial
+                    por excelencia. Proporcionan una gestión integral de todos los procesos de la compañía, desde
+                    aquellos del departamento Financiero, hasta los de Logística, Operaciones o Recursos Humanos, entre
+                    muchos otros.</li>
+                <li><strong>Customer Relationship Management (CRM)</strong>: Los CRM son un tipo de sistema de gestión
+                    orientado a dar soporte a procesos comerciales y de relación con el cliente, tanto en el ámbito de
+                    preventa como en el de posventa.</li>
+                <li><strong>Business Intelligence (BI)</strong>: Los sistemas de Business Intelligence (BI) están
+                    orientados a la gestión y almacenamiento de grandes volúmenes de información y al apoyo a la
+                    dirección en la toma de decisiones.</li>
+                <li><strong>Sistemas de Gestión Documental (SGD)</strong>: Los SGD se orientan a la gestión documental,
+                    es decir, a la creación, almacenamiento, archivado y organización de grandes volúmenes de
+                    documentos, ya sean en formato electrónico o en papel.</li>
+            </ul>
+        </section>
+        <section id="caracteristicas">
+            <h2>Características de los Sistemas de Gestión Empresarial</h2>
+            <ul>
+                <li><strong>Integración: </strong>Como comentábamos al comienzo, un software ERP deberá ser capaz de
+                    ofrecer integración con otras herramientas, ya sea a través de APIs o de otro sistema.</li>
+                <li><strong>Adaptabilidad: </strong>Un software ERP, sobre todo si estamos ante, por ejemplo, softwares
+                    de contabilidad que deben aplicar cambios cada vez que haya una nueva actualización de las leyes,
+                    debe ser capaz de adaptarse a cualquier cambio de manera rápida y sencilla.</li>
+                <li><strong>Automatización: </strong>La principal característica que todo ERP debería ofrecer es la
+                    automatización de procesos. Da igual para que industria esté pensado el ERP, deberá ofrecer la
+                    posibilidad de automatizar los procesos más tediosos del trabajo a realizar.</li>
+                <li><strong>Escalabilidad: </strong>A menudo, cuando adquirimos una herramienta, ya sea un ERP o, por
+                    ejemplo, un ecommerce, es una decisión a medio-largo plazo (nadie quiere cambiar de software cada 6
+                    meses) y no sabemos con exactitud dónde se encontrará nuestra organización en unos meses o años.
+                </li>
+            </ul>
+        </section>
+        <script>
+            const elementos = document.querySelectorAll("section");
+
+            const mostrarElementos = () => {
+                elementos.forEach(elemento => {
+                    const rect = elemento.getBoundingClientRect();
+                    const alturaVentana = window.innerHeight;
+
+                    if (rect.top < alturaVentana * 0.8) {
+                        elemento.classList.add("visible");
+                    } else {
+                        elemento.classList.remove("visible");
+                    }
+                });
+            };
+
+            window.addEventListener("scroll", mostrarElementos);
+            window.addEventListener("load", mostrarElementos);
+
+            function mostrarMenu() {
+                let menu = document.querySelector(".menú");
+                menu.classList.toggle("show");
+            }
+        </script>
+    </main>
+    <footer>
+        <div class="redes-sociales" id="contacto">
+            <a href="https://youtube.com/mitienda" target="_blank"><i class="fab fa-youtube"></i></a>
+            <a href="https://facebook.com/mitienda" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://twitch.tv/mitienda" target="_blank"><i class="fab fa-twitch"></i></a>
+            <a href="https://instagram.com/mitienda" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+        <button class="boton-1-pagina">
+            <a href="./tarea1.html">Página 1</a>
+        </button>
+        <button class="boton-3-pagina">
+            <a href="./tarea3.html">Página 3</a>
+        </button>
+    </footer>
+</body>
+
+</html>
